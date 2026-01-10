@@ -1,5 +1,23 @@
 document.addEventListener('DOMContentLoaded', () => {
     
+    // Navbar hide on scroll down, show on scroll up
+    let lastScrollY = window.scrollY;
+    const navbar = document.querySelector('.navbar');
+    
+    window.addEventListener('scroll', () => {
+        const currentScrollY = window.scrollY;
+        
+        if (currentScrollY > lastScrollY && currentScrollY > 100) {
+            // Scrolling down & past 100px
+            navbar.classList.add('hidden');
+        } else {
+            // Scrolling up
+            navbar.classList.remove('hidden');
+        }
+        
+        lastScrollY = currentScrollY;
+    });
+    
     // Intersection Observer for scroll animations
     const observerOptions = {
         root: null,
