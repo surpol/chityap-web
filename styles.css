@@ -278,8 +278,11 @@ a {
 }
 
 .image-block img {
-    flex: 1.5;
-    max-width: 60%;
+    flex: 1;
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 16px;
 }
 
 .image-block .caption {
@@ -348,14 +351,12 @@ a {
 .highlight-block .image-wrapper {
     flex: 1;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    /* Center the image and caption */
 }
 
 .highlight-block .image-wrapper img {
-    max-width: 280px;
-    max-height: 350px;
+    max-width: 200px;
+    max-height: 250px;
     object-fit: cover;
     border-radius: 16px;
 }
@@ -367,7 +368,6 @@ a {
     margin-top: 1rem;
     font-style: italic;
     font-family: var(--font-heading);
-    text-align: center;
 }
 
 /* CTA Section */
@@ -676,9 +676,8 @@ footer {
     }
 
     .image-block img {
-        max-width: 100%;
-        width: 100%;
-        max-height: 300px;
+        max-width: 200px;
+        max-height: 200px;
         object-fit: cover;
         margin: 0 auto;
         border-radius: 12px;
