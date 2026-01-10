@@ -162,6 +162,22 @@ a {
     background-color: #0066DD;
 }
 
+.app-store-btn {
+    display: inline-block;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.app-store-btn img {
+    height: 50px;
+    width: auto;
+    border-radius: 0;
+}
+
+.app-store-btn:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
 .btn-small {
     background-color: transparent;
     border: 1px solid var(--text-color);
@@ -288,6 +304,12 @@ a {
     padding: var(--spacing-md);
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 0.75rem;
 }
 
 .feature-card h3 {
@@ -532,10 +554,22 @@ footer {
     .highlight-block {
         flex-direction: column;
         padding: 1.5rem;
+        gap: 1.5rem;
     }
 
     .image-block img {
         max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .image-block .caption {
+        padding: 0;
+        text-align: center;
+    }
+
+    .image-block h3 {
+        font-size: 1.5rem;
     }
 
     .signup-form {
