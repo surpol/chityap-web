@@ -122,12 +122,22 @@
                 <h2>Real life, digitized.</h2>
                 <p>Simple, dark-mode interface designed to be easy on your eyes and your mind.</p>
             </div>
-            <div class="screens-grid">
-                <div class="phone-mockup scroll-reveal">
-                    <img src="assets/app-feed.png" alt="ChitYap Home Feed showing posts from friends" />
+            <div class="carousel-container scroll-reveal">
+                <button class="carousel-btn carousel-btn-left" aria-label="Previous slide">‹</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="phone-mockup carousel-slide">
+                            <img src="assets/app-feed.png" alt="ChitYap Home Feed showing posts from friends" />
+                        </div>
+                        <div class="phone-mockup carousel-slide">
+                            <img src="assets/app-profile.png" alt="ChitYap Profile Screen showing memories and friends" />
+                        </div>
+                    </div>
                 </div>
-                <div class="phone-mockup scroll-reveal" style="animation-delay: 0.2s;">
-                    <img src="assets/app-profile.png" alt="ChitYap Profile Screen showing memories and friends" />
+                <button class="carousel-btn carousel-btn-right" aria-label="Next slide">›</button>
+                <div class="carousel-dots">
+                    <button class="carousel-dot active" aria-label="Slide 1"></button>
+                    <button class="carousel-dot" aria-label="Slide 2"></button>
                 </div>
             </div>
         </div>
