@@ -576,17 +576,21 @@ footer {
 .phone-mockup {
     background: #000;
     border-radius: 40px;
-    padding: 12px;
+    padding: 10px;
     box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.15), 0 30px 60px -30px rgba(0, 0, 0, 0.3);
-    max-width: 320px;
+    max-width: 280px;
     width: 100%;
-    border: 4px solid #333;
+    border: 3px solid #333;
 }
 
 .phone-mockup img {
     border-radius: 30px;
     width: 100%;
     display: block;
+}
+
+.carousel-track-container {
+    max-width: 280px;
 }
 
 /* Mobile Responsiveness */
