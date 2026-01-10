@@ -543,17 +543,28 @@ footer {
         flex-direction: column;
         text-align: center;
         padding-top: 6rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 
     .hero-content h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .cta-group {
+        display: flex;
+        justify-content: center;
+    }
+
+    .app-store-btn img {
+        height: 44px;
     }
 
     .image-block,
     .image-block.reversed,
     .highlight-block {
         flex-direction: column;
-        padding: 1.5rem;
+        padding: 1rem;
         gap: 1.5rem;
     }
 
@@ -561,6 +572,7 @@ footer {
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
+        border-radius: 12px;
     }
 
     .image-block .caption {
@@ -570,6 +582,14 @@ footer {
 
     .image-block h3 {
         font-size: 1.5rem;
+    }
+
+    .text-block {
+        padding: 0 0.5rem;
+    }
+
+    .text-block h2 {
+        font-size: 2rem;
     }
 
     .signup-form {
