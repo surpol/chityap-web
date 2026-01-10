@@ -350,6 +350,13 @@ a {
     /* Center the image and caption */
 }
 
+.highlight-block .image-wrapper img {
+    max-width: 280px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
 .mascot-caption {
     font-size: 0.9rem;
     color: var(--text-color);
