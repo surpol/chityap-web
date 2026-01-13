@@ -5,167 +5,133 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChitYap - Real Connection, No Noise</title>
-    <meta name="description"
-        content="A social platform focused on real connection without excess content, addictive algorithms, or doomscrolling.">
+    <meta name="description" content="A social platform focused on real connection without excess content, addictive algorithms, or doomscrolling.">
     <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar fade-in">
-        <div class="navbar-inner">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-inner">
             <a href="#" class="logo-wrapper">
-                <img src="assets/logo.png" alt="ChitYap App Icon" class="nav-logo">
-                <span class="logo">ChitYap</span>
+                <img src="assets/logo.png" alt="ChitYap" class="nav-logo">
+                <span class="logo-text">ChitYap</span>
             </a>
             <div class="nav-links">
-                <a href="#philosophy">Philosophy</a>
                 <a href="#features">Features</a>
+                <a href="#about">About</a>
+                <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="nav-cta">Download</a>
             </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="mobile-cta">Download</a>
+    </div>
+
+    <!-- Hero Section -->
     <header class="hero">
-        <div class="hero-content fade-in-up">
-            <h1>Connect deeply.<br>Scroll less.</h1>
-            <p class="subtitle">A social space designed for humans, not engagement metrics. No algorithms, no infinite
-                feeds, just real connection.</p>
-            <div class="cta-group">
-                <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="app-store-btn">
-                    <img src="assets/appstore.svg" alt="Download on the App Store" />
-                </a>
+        <div class="container hero-inner">
+            <div class="hero-content">
+                <h1>Connect deeply, scroll less.</h1>
+                <p class="hero-subtitle">No algorithms. No strangers. Just close friends.</p>
+                <div class="hero-cta">
+                    <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="btn-primary">
+                        <img src="assets/appstore.svg" alt="Download on the App Store" />
+                    </a>
+                </div>
+                <p class="hero-note">Free on iOS. Android coming soon.</p>
             </div>
-            <p class="micro-copy">Available on iPhone. Android coming soon.</p>
-        </div>
-        <div class="hero-visual fade-in-delayed">
-            <!-- 
-                Image Requirement 1: Hero Visual (Chitty Mascot)
-            -->
-            <img src="assets/chitty-hero.jpg"
-                alt="Chitty, the friendly orange mascot of ChitYap, waving hello on a teal background" />
+            <div class="hero-image">
+                <img src="assets/chitty-hero.jpg" alt="ChitYap mascot Chitty">
+            </div>
         </div>
     </header>
 
-    <section id="philosophy" class="philosophy-section">
-        <div class="container">
-            <div class="text-block scroll-reveal">
-                <h2>The social internet is broken.</h2>
-                <p>We traded intimacy for dopamine. Friendships for followers. Conversations for content consumption.
-                </p>
-                <p>It’s time to go back to what matters.</p>
-            </div>
-            <div class="image-block reversed scroll-reveal">
-                <!-- 
-                    Image Requirement 2: Feature Calm
-                    Keeping this abstract one as it fits the "calm" vs "broken" narrative well.
-                -->
-                <img src="assets/feature-calm.png"
-                    alt="A serene, glowing abstract interface floating in a peaceful landscape, symbolizing freedom from digital noise" />
-                <div class="caption">
-                    <h3>Reclaim your attention</h3>
-                    <p>Designed to be put down. No notification spam, no red dots demanding your gaze.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Features Section -->
     <section id="features" class="features-section">
         <div class="container">
-            <div class="feature-grid">
-                <div class="feature-card scroll-reveal">
+            <div class="section-header">
+                <h2>What you get</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
                     <span class="feature-icon">📰</span>
                     <h3>Chronological Feed</h3>
-                    <p>See what your friends are up to, then move on with your day. No algorithmic manipulation.</p>
+                    <p>Posts show up in order. That's it.</p>
                 </div>
-                <div class="feature-card scroll-reveal">
+                <div class="feature-card">
                     <span class="feature-icon">🎙️</span>
                     <h3>Voice Memos</h3>
-                    <p>Send quick voice notes to share moments with warmth and personality. Hear your friends, not just read them.</p>
+                    <p>Record and send voice notes to friends.</p>
                 </div>
-                <div class="feature-card scroll-reveal">
+                <div class="feature-card">
                     <span class="feature-icon">📸</span>
-                    <h3>Picture-First Posts</h3>
-                    <p>Share photos that capture real moments. Visual storytelling without the endless scroll.</p>
+                    <h3>Photo Sharing</h3>
+                    <p>Post pictures. Your friends see them.</p>
                 </div>
-                <div class="feature-card scroll-reveal">
+                <div class="feature-card">
                     <span class="feature-icon">👫</span>
-                    <h3>For Close Friends</h3>
-                    <p>Connect with the people who matter. No followers, no strangers, just genuine friendships.</p>
-                </div>
-            </div>
-
-            <div class="highlight-block scroll-reveal">
-                <div class="content">
-                    <h2>Built for connection, <br>not addiction.</h2>
-                    <p>We don't sell your attention. We facilitate your friendships.</p>
-                </div>
-                <!-- 
-                    Image Requirement 3: Community Connect (Chitty Warm)
-                -->
-                <div class="image-wrapper">
-                    <img src="assets/chitty-warm.jpg"
-                        alt="Chitty the mascot standing in a warm, orange-themed architectural space" />
-                    <p class="mascot-caption">Say hi to Chitty 👋</p>
+                    <h3>Friends Only</h3>
+                    <p>No followers, no public profiles. Just friends.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="preview" class="preview-section">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container about-inner">
+            <div class="about-image">
+                <img src="assets/chitty-warm.jpg" alt="Chitty mascot">
+            </div>
+            <div class="about-content">
+                <h2>Why we built ChitYap</h2>
+                <p>We're going back to basics. ChitYap is a friends app to make connecting with friends better.</p>
+                <p class="about-signature">Say hi to Chitty 👋</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
-            <div class="section-header scroll-reveal">
-                <h2>Real life, digitized.</h2>
-                <p>Simple, dark-mode interface designed to be easy on your eyes and your mind.</p>
-            </div>
-            <div class="carousel-container scroll-reveal">
-                <button class="carousel-btn carousel-btn-left" aria-label="Previous slide">‹</button>
-                <div class="carousel-track-container">
-                    <div class="carousel-track">
-                        <div class="phone-mockup carousel-slide">
-                            <img src="assets/app-feed.png" alt="ChitYap Home Feed showing posts from friends" />
-                        </div>
-                        <div class="phone-mockup carousel-slide">
-                            <img src="assets/app-profile.png" alt="ChitYap Profile Screen showing memories and friends" />
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-btn carousel-btn-right" aria-label="Next slide">›</button>
-                <div class="carousel-dots">
-                    <button class="carousel-dot active" aria-label="Slide 1"></button>
-                    <button class="carousel-dot" aria-label="Slide 2"></button>
-                </div>
-            </div>
+            <h2>Ready to connect for real?</h2>
+            <p>Download ChitYap and start sharing with friends.</p>
+            <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="btn-primary large">
+                <img src="assets/appstore.svg" alt="Download on the App Store" />
+            </a>
         </div>
     </section>
 
-    <section id="join" class="cta-section">
-        <div class="container scroll-reveal">
-            <h2>Ready to talk?</h2>
-            <p>Download ChitYap today and start connecting.</p>
-            <div style="margin-top: 2rem;">
-                <a href="https://apps.apple.com/us/app/chityap/id6757008313" class="btn-primary">Download on the App
-                    Store</a>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <img src="assets/logo.png" alt="ChitYap" class="footer-logo">
+                <span>ChitYap</span>
             </div>
-            <p class="micro-copy" style="margin-top: 1.5rem; opacity: 0.6;">Android user? We're working on it!</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="mailto:hello@chityap.com">Contact</a>
+            </div>
         </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="brand">ChitYap</div>
-                <div class="links">
-                    <a href="terms.html">Terms</a>
-                    <a href="privacy.html">Privacy</a>
-                    <a href="mailto:privacy@chityap.app">Contact</a>
-                </div>
-            </div>
-            <p class="copyright">&copy; 2026 ChitYap Inc. Built intentionally.</p>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 ChitYap Inc.</p>
         </div>
     </footer>
 
